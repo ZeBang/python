@@ -6,7 +6,7 @@ Student Exercises - Stickman Defense Game
 按照顺序完成这些练习，从简单到复杂。
 
 使用方法：
-1. 打开 stickman_defense.py
+1. 打开 game.py
 2. 找到对应的代码位置
 3. 按照练习说明修改代码
 4. 运行游戏，观察效果
@@ -18,7 +18,7 @@ Student Exercises - Stickman Defense Game
 """
 任务：修改游戏配置，让游戏更容易
 
-位置：stickman_defense.py 第44-49行
+位置：game.py 第44-49行
 
 练习：
 1. 将 PLAYER_SPEED 改为 10，让火柴人移动更快
@@ -45,7 +45,7 @@ roof_points = [(...), (...), (...)]（251–255 行）
 """
 任务：添加新的移动键
 
-位置：stickman_defense.py 第72-108行，Stickman.update() 方法
+位置：game.py 第72-108行，Stickman.update() 方法
 
 练习：在 update() 方法中添加以下代码，让按 Q 键时向左上移动
 
@@ -66,7 +66,7 @@ if keys[pygame.K_q]:
 """
 任务：添加加速功能
 
-位置：stickman_defense.py 第72-108行，Stickman.update() 方法
+位置：game.py 第72-108行，Stickman.update() 方法
 
 练习：修改移动代码，让按住 Shift 时移动更快
 
@@ -92,7 +92,7 @@ self.y += dy * speed_multiplier
 """
 任务：限制子弹数量
 
-位置：stickman_defense.py 第114-136行，Stickman.shoot() 方法
+位置：game.py 第114-136行，Stickman.shoot() 方法
 
 练习：修改 shoot() 方法，限制最多只能有 10 发子弹
 
@@ -112,7 +112,7 @@ self.y += dy * speed_multiplier
 """
 任务：理解游戏主循环
 
-位置：stickman_defense.py 第588-628行，Game.run() 方法
+位置：game.py 第588-628行，Game.run() 方法
 
 观察：理解这段代码的结构
 
@@ -168,7 +168,7 @@ distance = calculate_distance(bullet.x, bullet.y, monster.x, monster.y)
 """
 任务：给火柴人添加能量系统
 
-位置：stickman_defense.py 第59-136行，Stickman 类
+位置：game.py 第59-136行，Stickman 类
 
 练习1：添加能量属性
 # 在 __init__() 方法中添加：
@@ -201,7 +201,7 @@ if not self.use_energy(10):
 """
 任务：添加不同类型的怪物
 
-位置：stickman_defense.py 第409-412行，Game.spawn_monster() 方法
+位置：game.py 第409-412行，Game.spawn_monster() 方法
 
 练习：修改 spawn_monster() 方法，随机生成不同类型的怪物
 
@@ -235,7 +235,7 @@ def spawn_monster(self):
 """
 任务：创建更复杂的分数系统
 
-位置：stickman_defense.py 第414-500行，Game.update() 方法
+位置：game.py 第414-500行，Game.update() 方法
 
 练习：根据怪物类型给予不同分数
 
@@ -265,7 +265,7 @@ if distance < bullet.size + monster.size:
 """
 任务：创建连击系统（高级）
 
-位置：stickman_defense.py 第381-407行，Game.__init__() 方法
+位置：game.py 第381-407行，Game.__init__() 方法
 
 练习：
 1. 在 __init__() 中添加连击相关变量：
